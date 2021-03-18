@@ -1,0 +1,101 @@
+/* Stick poistioning of navbar */
+.navbar {
+position: sticky;
+height: 50px;
+font-size: 20px;
+color:black;
+background-color: rgb(72, 54, 92);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;       
+  }
+
+
+/* tool tip using css */
+.tooltip {
+    position: relative;
+    border-bottom: 1px dotted black;
+  }
+  
+  /* Tooltip box */
+  .tooltip:before {
+    content: attr(data-tooltip); 
+    position: absolute;
+    width: 100px;
+    background-color: #062B45;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.2;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .6s;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 0.75em;
+  }
+  
+  
+  .tooltip:hover:before {
+    opacity: 1;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/* 
+html {
+    scroll-behavior: smooth;
+  } */
+
+/* scroll ease */
+.wrapper {
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory; */
+}
+
+.section {
+  scroll-snap-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #500f0b;
+  color: #fff;
+  font-size: 3em;
+}
+
+.bg-blue {
+  background: #4267b2;
+}
+
+.bg-green {
+  background: #4CAF50;
+}
+.bg-black {
+    background: black;
+}
+
+
+/* cursor animation  */
+.navbar:hover {
+    background-color: white;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>"), auto;
+  }
+
+
+  /* Creating shadow on an image */
+
+  .animation {
+    box-shadow: 2px 4px 8px #585858;
+  }
+  
+  .animation-1 {
+    filter: drop-shadow(2px 4px 8px #aeff17);
+  }
+
